@@ -1,0 +1,38 @@
+{
+  "1": {
+    "title": "Cold",
+    "performer": "NEFFEX",
+    "release": "2018-04-11",
+    "genre": [
+      "Electronic",
+      "DanceHip-HopRock"
+    ]
+  },
+  "2": {
+    "name": "Fight back",
+    "performer": "NEFFEX",
+    "release": "2017-08-25",
+    "genre": [
+      "Electronic",
+      "DanceHip-HopRock"
+    ]
+  },
+  "3": {
+    "title": "Rumors",
+    "performer": "NEFFEX",
+    "release": "2017-04-25",
+    "genre": [
+      "Electronic",
+      "DanceHip-HopRock"
+    ]
+  },
+  "4": {
+    "title": "One Shot",
+    "performer": "NEFFEX",
+    "release": "2018-08-14",
+    "genre": [
+      "Electronic",
+      "DanceHip-HopRock"
+    ]
+  }
+}
