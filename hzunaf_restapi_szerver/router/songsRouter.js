@@ -26,7 +26,10 @@ function songsRouter(szerver, fs) {
                 throw err;
             }
             console.log("get kérés érkezett /allsong")
-            res.send(JSON.parse(data));
+            /*let temp = Object.keys(data).map(function(_) { return data[_]; });*/
+            console.log(data)
+
+            res.send(data);
         });
     });
 
