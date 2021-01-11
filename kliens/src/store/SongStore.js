@@ -3,7 +3,7 @@ import dispatcher from "../dispatcher/Dispatcher";
 import {refresh} from '../dispatcher/ActionConstans';
 
 class SongStore extends EventEmitter {
-    _songs = "";
+    _songs = [];
 
     emitChange(){
         this.emit('Change');

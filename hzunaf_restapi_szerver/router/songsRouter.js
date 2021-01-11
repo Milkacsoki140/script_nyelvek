@@ -19,6 +19,17 @@ function songsRouter(szerver, fs) {
         });
     }
 
+    function json2array(json){
+        let result = [];
+        let keys = Object.keys(json);
+        keys.forEach(function(key){
+            let tmp = json[key];
+            tmp.id = key;
+            result.push(tmp);
+        });
+        return result;
+    }
+
     //vissza adja összes zene számot a json adatbázisból
     szerver.get('/allsong', (req, res) => {
         fs.readFile(DataBaseLocation, 'utf8', (err, data) => {
@@ -26,10 +37,8 @@ function songsRouter(szerver, fs) {
                 throw err;
             }
             console.log("get kérés érkezett /allsong")
-            /*let temp = Object.keys(data).map(function(_) { return data[_]; });*/
-            console.log(data)
-
-            res.send(data);
+            let raw = JSON.parse(data)
+            res.send(json2array(raw));
         });
     });
 
