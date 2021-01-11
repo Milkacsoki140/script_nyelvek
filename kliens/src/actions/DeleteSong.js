@@ -5,7 +5,7 @@ import {GetSong} from "./GetSong";
 
 export const DeleteSong = (value) => {
     axios.defaults.timeout = 1500;
-    axios.delete('/delete',{},
+    axios.delete('/delete/'+value,{},
         {
 
         })

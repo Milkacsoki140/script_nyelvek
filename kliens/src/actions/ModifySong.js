@@ -5,14 +5,13 @@ import {GetSong} from "./GetSong";
 
 export const ModifySong = (value) => {
     axios.defaults.timeout = 1500;
-    axios.put('/employee/update',
+    axios.put('/update/'+value.id,
         {
-            _id:value.modifyID,
-            data: {
-                name: value.name,
-                address: value.address,
-                dateOfBirth: value.dateOfBirth
-            }
+            id : value.id,
+            title: value.title,
+            performer: value.performer,
+            release: value.release,
+            genre: value.genre
         })
         .then((resp) => {
             console.log("was a response")

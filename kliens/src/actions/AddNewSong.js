@@ -5,11 +5,12 @@ import {GetSong} from "./GetSong";
 
 export const AddNewSong = (value) => {
     axios.defaults.timeout = 1500;
-    axios.post('/employee/add',
+    axios.post('/add',
         {
-            name: value.name,
-            address: value.address,
-            dateOfBirth: value.dateOfBirth
+            title: value.title,
+            performer:value.performer,
+            release:value.release,
+            genre:value.genre
         })
         .then((resp) => {
             console.log("response")

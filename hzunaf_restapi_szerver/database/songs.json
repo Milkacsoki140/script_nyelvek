@@ -1,8 +1,9 @@
-{"1": {
+{
+  "1": {
     "title": "Cold",
     "performer": "NEFFEX",
     "release": "2018-04-11",
-    "genre":"Electronic"
+    "genre": "Electronic"
   },
   "2": {
     "title": "Fight back",
@@ -17,8 +18,9 @@
     "genre": "Electronic"
   },
   "4": {
-    "title": "One Shot",
+    "title": "Rumors",
     "performer": "NEFFEX",
-    "release": "2018-08-14",
+    "release": "2017-04-04",
     "genre": "Electronic"
-  }}
+  }
+}

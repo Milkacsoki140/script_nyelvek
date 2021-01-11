@@ -76,7 +76,7 @@ class ModifyElement extends React.Component {
                                     .required(),
                                 release: Yup.date()
                                     .required(),
-                                genre: Yup.date()
+                                genre: Yup.string()
                                     .required()
                             })}
                         >
